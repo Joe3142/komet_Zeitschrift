@@ -81,6 +81,7 @@ function advertisement(){
   fill(255,100,0);
   text("Jetzt", 40,690);
   text("Kaufen", 60, 750);
+  text("Werbung", 330,200);
 }
 
 function aboutus(){
