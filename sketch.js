@@ -74,14 +74,14 @@ function zeitschrift(){
 function advertisement(){
   fill(255);
   stroke(0);
-  rect(0,300,250,500);
+  rect(0,250,300,500);
   imageMode(CORNER);
   image(a,20,320,220,312);
   textSize(50);
   fill(255,100,0);
   text("Jetzt", 40,690);
   text("Kaufen", 60, 750);
-  text("Werbung", 330,200);
+  text("Werbung", 40,290);
 }
 
 function aboutus(){
