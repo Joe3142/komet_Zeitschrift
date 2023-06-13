@@ -2,7 +2,6 @@ let k;
 let c;
 let a;
 
-let d;
 
 function preload(){
   k = loadImage('pic/Zeitung-Komet.png');
@@ -12,7 +11,6 @@ function preload(){
 
 function setup() {
   createCanvas(500, 500);
-  d = 1;
 }
 
 
@@ -20,14 +18,14 @@ function setup() {
 function draw() {
   background(255);
   noStroke();
-  textSize(48 * d);
+  textSize(48);
   fill(0);
-  text("Komet Zeitschrift",750 * d,100 * d);
+  text("Komet Zeitschrift",750,100);
   fill(0,0,255);
-  rect(0,0,1920 * d,50 * d);
+  rect(0,0,1920,50);
   fill(255);
   imageMode(CORNER);
-  image(k,0,50 * d,250 * d,250 * d);
+  image(k,0,50,250,250);
   zeitschrift();
   advertisement();
   aboutus();
@@ -49,26 +47,26 @@ function tooltip(txt){
 
 function zeitschrift(){
   stroke(0);
-  rect(560 * d,177 * d,660 * d,450 * d);
+  rect(560,177,660,450 );
   imageMode(CORNER);
-  image(c,570 * d,187 * d,300 * d,426 * d);
-  textSize(14 * d);
+  image(c,570,187,300,426);
+  textSize(14);
   fill(0);
   noStroke();
-  text("Komet Ausgabe 1: Mysteriöses Universum - ",890 * d,200 * d);
-  text("Das unendliche Geheimnis", 900 * d,220 * d);
-  text("Haben sie sich auch schon oftmals gewundert,", 890 * d,260 * d);
-  text("welche Geheimnisse sich im Universum verbergen?", 890 * d,280 * d);
-  text("Wir haben die Antworten auf die Fragen rund", 890 * d,300 * d);
-  text("um das Universum.", 890 * d,320 * d);
-  text("Erscheinungsdatum: 14.6.2023", 890 * d,340 * d);
-  text("Preis: 4,99€", 890 * d,360 * d);
+  text("Komet Ausgabe 1: Mysteriöses Universum - ",890,200);
+  text("Das unendliche Geheimnis", 900,220);
+  text("Haben sie sich auch schon oftmals gewundert,", 890,260);
+  text("welche Geheimnisse sich im Universum verbergen?", 890, 280);
+  text("Wir haben die Antworten auf die Fragen rund", 890 ,300);
+  text("um das Universum.", 890,320);
+  text("Erscheinungsdatum: 14.6.2023", 890,340);
+  text("Preis: 4,99€", 890,360 );
   fill(0,0,255);
-  rect(890 * d,400 * d,120 * d,50 * d);
+  rect(890,400,120,50);
   fill(255);
-  textSize(20 * d);
-  text("kaufen", 920 * d, 430 * d);
-  if(between(890 * d,400 * d,1010 * d,450 * d,mouseX,mouseY)){
+  textSize(20);
+  text("kaufen", 920, 430);
+  if(between(890,400,1010,450,mouseX,mouseY)){
   tooltip("Nicht mehr verfügbar");
   }
 }
@@ -76,26 +74,26 @@ function zeitschrift(){
 function advertisement(){
   fill(255);
   stroke(0);
-  rect(0,400 * d,300 * d,500 * d);
+  rect(0,400,300,500);
   imageMode(CORNER);
-  image(a,20 * d,420 * d,220 * d,312 * d);
-  textSize(50 * d);
+  image(a,20,420,220,312);
+  textSize(50);
   fill(255,100,0);
-  text("Jetzt", 40 * d,790 * d);
-  text("Kaufen", 60 * d, 850 * d);
+  text("Jetzt", 40,790);
+  text("Kaufen", 60, 850);
 }
 
 function aboutus(){
   fill(255);
   stroke(0);
-  rect(1620 * d,100 * d,300 * d,200 * d);
+  rect(1620,100,300,200);
   noStroke();
   fill(0);
-  textSize(24 * d)
-  text("Über uns:", 1700 * d, 130 * d);
-  textSize(14 * d);
-  text("Wir sind vier Schüler aus einem Schulprokjekt,", 1630 * d, 160 * d)
-  text("die eine Zeitschrift erstellt haben und jede", 1630 * d, 180 * d)
-  text("Zeitschrift hat eine Website, also haben", 1630 * d, 200 * d)
-  text("wir eine erstellt.", 1630 * d, 220 * d);
+  textSize(24)
+  text("Über uns:", 1700, 130);
+  textSize(14);
+  text("Wir sind vier Schüler aus einem Schulprokjekt,", 1630, 160)
+  text("die eine Zeitschrift erstellt haben und jede", 1630, 180)
+  text("Zeitschrift hat eine Website, also haben", 1630, 200)
+  text("wir eine erstellt.", 1630, 220);
 }
