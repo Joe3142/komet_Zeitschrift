@@ -25,7 +25,7 @@ function draw() {
   rect(0,0,1920,50);
   fill(255);
   imageMode(CORNER);
-  image(k,0,50,250,250);
+  image(k,0,50,150,150);
   zeitschrift();
   advertisement();
   aboutus();
@@ -74,13 +74,13 @@ function zeitschrift(){
 function advertisement(){
   fill(255);
   stroke(0);
-  rect(0,400,300,500);
+  rect(0,300,300,500);
   imageMode(CORNER);
-  image(a,20,420,220,312);
+  image(a,20,320,220,312);
   textSize(50);
   fill(255,100,0);
-  text("Jetzt", 40,790);
-  text("Kaufen", 60, 850);
+  text("Jetzt", 40,690);
+  text("Kaufen", 60, 750);
 }
 
 function aboutus(){
