@@ -6,7 +6,7 @@ let a;
 function preload(){
   k = loadImage('pic/Zeitung-Komet.png');
   c = loadImage('pic/cover.png');
-  a = loadImage('pic/cover ad.png');
+  a = loadImage('pic/cover-ad.png');
 }
 
 function setup() {
