@@ -74,7 +74,7 @@ function zeitschrift(){
 function advertisement(){
   fill(255);
   stroke(0);
-  rect(0,300,300,500);
+  rect(0,300,250,500);
   imageMode(CORNER);
   image(a,20,320,220,312);
   textSize(50);
